@@ -1,5 +1,6 @@
-## Welcome to GitHub Pages
+# Welcome to watum
 
+This model is officialy developed and published by [Mostafa Ramezani](mostafaramezani.com), a water science expert and numerical modeling enthusiast. 
 You can use the [editor on GitHub](https://github.com/anonymoustafa/watum/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
