@@ -5,7 +5,7 @@ filename = input('Type a file_name to  Load and save your work. ','s');
 filepath = input('Where did you saved Watum files? type the folder address EXP : "C:\\Users\\Windows_User\\Documents\\Watum "','s');
 
 if isempty(filename)  ==  1
-    filename = 'watum.xlsx' ; 
+    filename = 'lwf09.xlsx' ; % this happens to be tricky! don't forget to check excel filename with this line
 end
 
 if isempty(filepath)  ==  1
