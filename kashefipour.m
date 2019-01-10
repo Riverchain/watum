@@ -19,6 +19,6 @@ ustar =sqrt(g .* r .* s);
 if mean (b./y) >= 50
     Ex    =10.612 .* y .* ustar .* (u ./ ustar) .^ 2;
 else
-    Ex = (7.428 + 1.775 .*((w./y).^0.62) .* ((ustar ./ u).^ 0.572)) .* (u ./ ustar) .* y .*u;
+    Ex = (7.428 + 1.775 .*((b./y).^0.62) .* ((ustar ./ u).^ 0.572)) .* (u ./ ustar) .* y .*u;
 end
 
