@@ -1,11 +1,12 @@
 clc ;
 clear ;
 disp('You can leave two following statements blank')
-filename = input('Type a file_name to  Load and save your work. \n if your file is already configured, just tap ENTER ','s');
-filepath = input('Where did you saved Watum files? type the folder address like this: \n "C:\\Users\\Windows_User\\Documents\\Watum " \n if your matlab file, configured excel file and all m files listed bellow are in the same path available then just tap ENTER ','s');
+filename = input('Type a file_name to  Load and save your work. ','s');
+
+filepath = input('Where did you saved Watum files? type the folder address EXP : "C:\\Users\\Windows_User\\Documents\\Watum "','s');
 
 if isempty(filename)  ==  1
-    [~,filename,~] = xlsread(filename,'Setting','B2:B2'); % excel filename % this happens to be tricky! don't forget to check excel filename with this line
+    filename = 'lwf09.xlsx' ; % this happens to be tricky! don't forget to check excel filename with this line
 end
 
 if isempty(filepath)  ==  1
