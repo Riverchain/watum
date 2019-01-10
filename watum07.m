@@ -153,6 +153,13 @@ end
 LCD0 = LCD0 - en;
 
 epr = (LCD0 .* a) ./ dx  ; % assign E' value
+
+if dx > min(2*LCD0./u)
+disp('you chosen dx as ')
+disp(dx)
+disp('you are supposed to assign a smaller \n value than the following to the dx')
+disp(2*LCD0./u)
+end
 %% making Diffusive Load Matrix
 DLoad = TX_Cells;
 [ DLTST_indx , DLTEN_indx ] = timindexer( dt, DL_T_START, DL_T_END );

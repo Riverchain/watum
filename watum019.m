@@ -1,12 +1,11 @@
 clc ;
 clear ;
 disp('You can leave two following statements blank')
-filename = input('Type a file_name to  Load and save your work. ','s');
-
-filepath = input('Where did you saved Watum files? type the folder address EXP : "C:\\Users\\Windows_User\\Documents\\Watum "','s');
+filename = input('Type a file_name to  Load and save your work. \n if your file is already configured, just tap ENTER ','s');
+filepath = input('Where did you saved Watum files? type the folder address like this: \n "C:\\Users\\Windows_User\\Documents\\Watum " \n if your matlab file, configured excel file and all m files listed bellow are in the same path available then just tap ENTER ','s');
 
 if isempty(filename)  ==  1
-    filename = 'lwf09.xlsx' ; % this happens to be tricky! don't forget to check excel filename with this line
+    [~,filename,~] = xlsread(filename,'Setting','B2:B2'); % excel filename % this happens to be tricky! don't forget to check excel filename with this line
 end
 
 if isempty(filepath)  ==  1
@@ -94,22 +93,22 @@ elseif strcmp(LCD_num,'Seo & Cheong 1998') == 1
 elseif strcmp(LCD_num,'Deng 2001') == 1
         LCD0 = deng(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Kashefipour & Falconer 2002') == 1
+elseif strcmp(LCD_num,'Azamathulla and Wu (2011)') == 1
         LCD0 = kashefipour(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Rajeev and Dutta 2009') == 1
+elseif strcmp(LCD_num,'Etemadshahidi and Taghipour (2012)') == 1
         LCD0 = rajeev(w,y,zl,s,q,u) ;
 
-elseif strcmp(LCD_num,'EtemadShahidi & Taghipour 2009') == 1
+elseif strcmp(LCD_num,'Zeng and Huai (2014)') == 1
         LCD0 = shahidi(w,y,zl,s,q,u) ;
 
-elseif strcmp(LCD_num,'Zeng and Huai 2014') == 1
-        LCD0 = jhang(w,y,zl,s,q,u);
+elseif strcmp(LCD_num,'Disley et al. (2015)') == 1
+        LCD0 = disley(w,y,zl,s,q,u);
         
-elseif strcmp(LCD_num,'Qiasi  2015') == 1
-        LCD0 = qiasi(w,y,zl,s,q,u);
+elseif strcmp(LCD_num,'Noori et al. (2017)') == 1
+        LCD0 = noori(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'none (if you want study on a not dispersive model)') == 1
+elseif strcmp(LCD_num,'None Dispersive Model') == 1
         LCD0 = 0 ;        
 end 
 
