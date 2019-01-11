@@ -1,8 +1,9 @@
-function Ex = elder(b, y, z, s, flow, u)
+function Ex = Elder_1959(b, y, z, s, flow, u)
 %% Elder Longitudinal dispersion coefficient 1959
 % This function calculate Elder Longitudinal Dispersion Coefficient
 % I strongly recommend you, please provide a valid U vector before using this model.
 % use meter and qubic meter as your dimentions
+%Elder, J. (1959) The dispersion of marked fluid in turbulent shear flow. Journal of Fluid Mechanics 5(4), 544-560.
 
 a   = y .* ( b + z .* y);
 w = a ./ y;

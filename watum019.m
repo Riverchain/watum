@@ -100,7 +100,7 @@ elseif strcmp(LCD_num,'Etemadshahidi and Taghipour (2012)') == 1
         LCD0 = rajeev(w,y,zl,s,q,u) ;
 
 elseif strcmp(LCD_num,'Zeng and Huai (2014)') == 1
-        LCD0 = shahidi(w,y,zl,s,q,u) ;
+        LCD0 = Zeng_and_Huai_2014(w,y,zl,s,q,u) ;
 
 elseif strcmp(LCD_num,'Disley et al. (2015)') == 1
         LCD0 = disley_2015(w,y,zl,s,q,u);

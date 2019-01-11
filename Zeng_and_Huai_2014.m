@@ -1,6 +1,6 @@
 function Ex = Zeng_and_Huai_2014( b, y, z, s, flow, u )
-%% "Disley 2015" Longitudinal dispersion coefficient
-% Disley, T., Gharabaghi, B., Mahboubi, A. and McBean, A. (2015) Predictive equation for longitudinal dispersion coefficien. HYDROLOGICAL PROCESSES 29, 161-172.
+%% "Zeng and Huai (2014)" Longitudinal dispersion coefficient
+% Zeng, Y. and Huai, W. (2014) Estimation of longitudinal dispersion coefficient in rivers. Journal of Hydro-environment Research 8(1), 2-8.
 % use meter and qubic meter as your dimentions
 a   = y .* ( b + z .* y);
 T   =b + 2 .* z .* y;
@@ -14,5 +14,5 @@ end
 g   =9.81;
 w   =a  ./  y;
 ustar   =sqrt(g .* r .* s);
-Ex      = y .* ustar .* 3.563 .* ((u ./  (sqrt(g .* y))) .^ -0.4117) .* ((w  ./  y) .^ 0.6776) .* ((u  ./  ustar) .^ 1.0132);
+Ex      = y .* ustar .* 5.4 .* ((u ./ ustar) .^ 0.13) .* ((w  ./  y) .^ 0.7);
 end
