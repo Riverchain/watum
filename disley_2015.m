@@ -1,6 +1,6 @@
-function Ex = jhang( b, y, z, s, flow, u )
-%% "Jhang 2015" Longitudinal dispersion coefficient
-% This function Zeng and Huai 2015  LDC
+function Ex = disley( b, y, z, s, flow, u )
+%% "Disley 2015" Longitudinal dispersion coefficient
+% Disley, T., Gharabaghi, B., Mahboubi, A. and McBean, A. (2015) Predictive equation for longitudinal dispersion coefficien. HYDROLOGICAL PROCESSES 29, 161-172.
 % use meter and qubic meter as your dimentions
 a   = y .* ( b + z .* y);
 T   =b + 2 .* z .* y;
