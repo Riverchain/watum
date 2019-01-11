@@ -78,7 +78,7 @@ Betha        = 1 - Alpha ;
       
        % numerical disspersion occurs: error_n = u .* dx * (Alpha- 0.5) - (0.5 .* (u.*u.*dt));
        
-if          strcmp(LCD_num,'Elder 1959') ==1
+if          strcmp(LCD_num,'Elder (1959)') ==1
         LCD0 = elder(w,y,zl,s,q,u);
     
 elseif     strcmp(LCD_num,'Fischer 1975') == 1
