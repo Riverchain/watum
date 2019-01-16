@@ -79,9 +79,13 @@ Betha        = 1 - Alpha ;
        % numerical disspersion occurs: error_n = u .* dx * (Alpha- 0.5) - (0.5 .* (u.*u.*dt));
        
 if          strcmp(LCD_num,'Elder (1959)') ==1
-        LCD0 = elder(w,y,zl,s,q,u);
+        LCD0 = Elder_1959(w,y,zl,s,q,u);
     
-elseif     strcmp(LCD_num,'Fischer 1975') == 1
+
+elseif     strcmp(LCD_num,'Fischer (1966)') == 1
+        LCD0 = fischer(w,y,zl,s,q,u);
+
+elseif     strcmp(LCD_num,'Fischer (1975)') == 1
         LCD0 = fischer(w,y,zl,s,q,u);
 
 elseif strcmp(LCD_num,'Iwasa and Aya 1991') == 1
@@ -112,7 +116,7 @@ elseif strcmp(LCD_num,'None Dispersive Model') == 1
         LCD0 = 0 ;        
 end 
 
-All_LDC = [elder(w,y,zl,s,q,u),  ...
+All_LDC = [Elder_1959(w,y,zl,s,q,u),  ...
    fischer(w,y,zl,s,q,u),  ...
    iwasaya(w,y,zl,s,q,u),  ...
    seo(w,y,zl,s,q,u),   ...
@@ -121,8 +125,7 @@ All_LDC = [elder(w,y,zl,s,q,u),  ...
    rajeev(w,y,zl,s,q,u),   ...
    shahidi(w,y,zl,s,q,u),  ...
    disley_2015(w,y,zl,s,q,u)];   ...
-% xlswrite(filename,All_LDC,'LDC'); un_comment this if you want a copy of
-% all calculated LDCs in your excel working file.
+xlswrite(filename,All_LDC,'LDC'); un_comment this if you want a copy of % all calculated LDCs in your excel working file.
 
 % end LDC maker
 %% time specification
