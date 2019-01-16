@@ -1,4 +1,4 @@
-function Ex = seo( b, y, z, s, flow, u )
+function Ex = Dx_1998_Seo_and_Cheong( b, y, z, s, flow, u )
 %% "Seo & Cheong 1998" Longitudinal dispersion coefficient
 % This function calculate "Seo and Cheong 1998"  LDC
 % use meter and qubic meter as your dimentions

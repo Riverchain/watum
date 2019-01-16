@@ -1,4 +1,4 @@
-function Ex = rajeev( b, y, z, s, flow, u )
+function Ex = Dx_2009_Sahay_and_Dutta( b, y, z, s, flow, u )
 %% "Rajeev and Dutta 2009" Longitudinal dispersion coefficient 
 % This function calculate Rajeev and Dutta 2009 LDC
 % use meter and qubic meter as your dimentions

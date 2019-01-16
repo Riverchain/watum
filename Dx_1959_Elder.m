@@ -1,4 +1,4 @@
-function Ex = Elder_1959(b, y, z, s, ~, ~)
+function Ex = Dx_1959_Elder(b, y, z, s, ~, ~)
 %% Elder Longitudinal dispersion coefficient 1959
 % This function calculate Elder Longitudinal Dispersion Coefficient
 % I strongly recommend you, please provide a valid U vector before using this model.

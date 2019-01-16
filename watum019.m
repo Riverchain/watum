@@ -79,39 +79,62 @@ Betha        = 1 - Alpha ;
        % numerical disspersion occurs: error_n = u .* dx * (Alpha- 0.5) - (0.5 .* (u.*u.*dt));
        
 if          strcmp(LCD_num,'Elder (1959)') ==1
-        LCD0 = Elder_1959(w,y,zl,s,q,u);
+        LCD0 = Dx_1959_Elder(w,y,zl,s,q,u);
     
-
 elseif     strcmp(LCD_num,'Fischer (1966)') == 1
-        LCD0 = fischer(w,y,zl,s,q,u);
+        LCD0 = Dx_1966_Fischer(w,y,zl,s,q,u);
 
-elseif     strcmp(LCD_num,'Fischer (1975)') == 1
-        LCD0 = fischer(w,y,zl,s,q,u);
+elseif     strcmp(LCD_num,'McQuivey and Keefer (1974)') == 1
+        LCD0 = Dx_1974_McQuivey_and_Keefer(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Iwasa and Aya 1991') == 1
-        LCD0 = iwasaya(w,y,zl,s,q,u);
+elseif strcmp(LCD_num,'Fischer (1975)') == 1
+        LCD0 = Dx_1975_Fischer(w,y,zl,s,q,u);
+        
+elseif strcmp(LCD_num,'Liu (1977)') == 1
+        LCD0 = Dx_1977_Liu(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Seo & Cheong 1998') == 1
-        LCD0 = seo(w,y,zl,s,q,u);
+elseif strcmp(LCD_num,'Koussis and Rodríguez-Mirasol (1988)') == 1
+        LCD0 = (w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Deng 2001') == 1
-        LCD0 = deng(w,y,zl,s,q,u);
+elseif strcmp(LCD_num,'Iwasa and Aya (1991)') == 1
+        LCD0 = Dx_1991_Iwasa_and_Aya(w,y,zl,s,q,u);
+
+elseif strcmp(LCD_num,'Seo and Cheong (1998)') == 1
+        LCD0 = Dx_1998_Seo_and_Cheong(w,y,zl,s,q,u);
+
+elseif strcmp(LCD_num,'Li et al. (1998)') == 1
+        LCD0 = (w,y,zl,s,q,u);
+
+elseif strcmp(LCD_num,'Li et al. 2 (1998)') == 1
+        LCD0 = (w,y,zl,s,q,u);
+
+elseif strcmp(LCD_num,'Deng et al. (2001)') == 1
+        LCD0 = Dx_2001_Deng_et_al(w,y,zl,s,q,u);
+
+elseif strcmp(LCD_num,'Kashefipour and Falconer (2002)') == 1
+        LCD0 = Dx_2002_Kashefipour_and_Falconer(w,y,zl,s,q,u);
+
+elseif strcmp(LCD_num,'Tavakollizadeh and Kashefipur (2007)') == 1
+        LCD0 = (w,y,zl,s,q,u);
+
+elseif strcmp(LCD_num,'Sahay and Dutta (2009)') == 1
+        LCD0 = Dx_2009_Sahay_and_Dutta(w,y,zl,s,q,u) ;
 
 elseif strcmp(LCD_num,'Azamathulla and Wu (2011)') == 1
-        LCD0 = kashefipour(w,y,zl,s,q,u);
+        LCD0 = (w,y,zl,s,q,u) ;
 
 elseif strcmp(LCD_num,'Etemadshahidi and Taghipour (2012)') == 1
-        LCD0 = rajeev(w,y,zl,s,q,u) ;
-
+        LCD0 = Dx_2012_Etemadshahidi_and_Taghipour(w,y,zl,s,q,u);
+        
 elseif strcmp(LCD_num,'Zeng and Huai (2014)') == 1
-        LCD0 = Zeng_and_Huai_2014(w,y,zl,s,q,u) ;
+        LCD0 = Dx_2014_Zeng_and_Huai(w,y,zl,s,q,u);
 
 elseif strcmp(LCD_num,'Disley et al. (2015)') == 1
-        LCD0 = disley_2015(w,y,zl,s,q,u);
-        
+        LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
+       
 elseif strcmp(LCD_num,'Noori et al. (2017)') == 1
-        LCD0 = noori(w,y,zl,s,q,u);
-
+        LCD0 = (w,y,zl,s,q,u);
+        
 elseif strcmp(LCD_num,'None Dispersive Model') == 1
         LCD0 = 0 ;        
 end 

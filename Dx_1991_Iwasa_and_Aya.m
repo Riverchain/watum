@@ -1,4 +1,4 @@
-function Ex = iwasaya( b, y, z, s, flow, u ) 
+function Ex = Dx_1991_Iwasa_and_Aya( b, y, z, s, flow, u ) 
 %% Fischer Longitudinal dispersion coefficient 1975
 % This function calculate Fischer LDC
 % use meter and qubic meter as your dimentions

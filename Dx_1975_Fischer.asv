@@ -1,7 +1,8 @@
-function Ex = fischer( b, y, z, s, flow, u )
+function Ex = Dx_1975_Fischer( b, y, z, s, flow, u )
 %% Fischer Longitudinal dispersion coefficient 1975
 % This function calculate Fischer LDC
 % use meter and qubic meter as your dimentions
+
 a   = y .* ( b + z .* y);
 T   =b + 2 .* z .* y;
 p   =b + 2 .* y .* sqrt(1+z .^ 2);

@@ -1,4 +1,4 @@
-function Ex = shahidi( b, y, z, s, flow, u )
+function Ex = Dx_2012_Etemadshahidi_and_Taghipour( b, y, z, s, flow, u )
 %% "EtemadShahidi and Taghipour" Longitudinal dispersion coefficient 
 % use meter and qubic meter as your dimentions
 a   = y .* ( b + z .* y);

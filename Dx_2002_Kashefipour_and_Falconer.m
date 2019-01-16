@@ -1,4 +1,4 @@
-function Ex = kashefipour( b, y, z, s, flow, u )
+function Ex = Dx_2002_Kashefipour_and_Falconer( b, y, z, s, flow, u )
 
 %% "Kashefipour & Falconer 2002" Longitudinal dispersion coefficient 
 % This function calculate Kashefipour & Falconer LDC

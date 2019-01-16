@@ -1,4 +1,4 @@
-function Ex = Zeng_and_Huai_2014( b, y, z, s, flow, u )
+function Ex = Dx_2014_Zeng_and_Huai( b, y, z, s, flow, u )
 %% "Zeng and Huai (2014)" Longitudinal dispersion coefficient
 % Zeng, Y. and Huai, W. (2014) Estimation of longitudinal dispersion coefficient in rivers. Journal of Hydro-environment Research 8(1), 2-8.
 % use meter and qubic meter as your dimentions

@@ -1,4 +1,4 @@
-function Ex = deng( b, y, z, s, flow, u )
+function Ex = Dx_2001_Deng_et_al( b, y, z, s, flow, u )
 %% "Deng et al 2001" Longitudinal dispersion coefficient
 % This function calculate "Deng et al 2001"  LDC
 % use meter and qubic meter as your dimentions
