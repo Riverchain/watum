@@ -15,7 +15,7 @@ switch nargin
 end
 g   =9.81;
 u_star= sqrt (g .* r .* s);
-Dx=0.18.*pow2(w/y).*sqrt(u./u_star).*y.*u_star;
+Dx=0.18.*pow2(w./y).*sqrt(u./u_star).*y.*u_star;
 
 end
 
