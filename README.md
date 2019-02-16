@@ -1,8 +1,8 @@
 # Welcome to watum
 
 This model is officialy developed and published by [Mostafa Ramezani](http://mostafaramezani.com), a water science expert and numerical modeling enthusiast. 
-You can use the [editor on GitHub](https://github.com/anonymoustafa/watum/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
+You can use the [editor on GitHub](https://github.com/anonymoustafa/watum/edit/master/README.md) to view the main code base.
+This model is based on a Master of Science thesis, supervised by Dr. Rohoollah Noori and Dr. Amin Sarang. In university of Tehran Faculty of Engineering ([Formerly known as Faculty of Environment](http://env.ut.ac.ir/en/home))
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 ## MATLAB Syntax
