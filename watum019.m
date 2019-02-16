@@ -129,11 +129,14 @@ elseif strcmp(LCD_num,'Etemadshahidi and Taghipour (2012)') == 1
 elseif strcmp(LCD_num,'Zeng and Huai (2014)') == 1
         LCD0 = Dx_2014_Zeng_and_Huai(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Disley et al. (2015)') == 1
-        LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
-       
 elseif strcmp(LCD_num,'Noori et al. (2017)') == 1
         LCD0 = Dx_2017_Noori_et_al(w,y,zl,s,q,u);
+               
+elseif strcmp(LCD_num,'Disley et al. (2015)') == 1
+                     %'Disley et al. (2015)' 
+        LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
+       
+
         
 elseif strcmp(LCD_num,'None Dispersive Model') == 1
         LCD0 = 0 ;        
@@ -157,20 +160,21 @@ Dx_2011_Azamathulla_and_Wu(w,y,zl,s,q,u),...
 Dx_2012_Etemadshahidi_and_Taghipour(w,y,zl,s,q,u),...
 Dx_2014_Zeng_and_Huai(w,y,zl,s,q,u),...
 Dx_2015_Disley(w,y,zl,s,q,u),...
-Dx_2017_Noori_et_al(w,y,zl,s,q,u) ...
-];
+Dx_2017_Noori_et_al(w,y,zl,s,q,u)];
    
 
 xlswrite(filename,All_LDC,'LDC','a2:s9'); 
 
 % end LDC maker
 %% time specification
-
-
+%LCD0 = Dx_2017_Noori_et_al(w,y,zl,s,q,u);
+%LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
+%LCD0 = Dx_2001_Deng_et_al(w,y,zl,s,q,u);
+LCD0 = Dx_1998_v2_Li_et_al(w,y,zl,s,q,u);
 dt   = (dx .^ 2) ./ (u .* dx .* (Alpha-Betha) + 2 .* LCD0 + PLI_Decay(1) .* (dx .^ 2)) %#ok
-dddddd = input('Calc dt press enter \n read dt press r ','s');
-if strcmp( dddddd , 'r' ) == 1
-    
+prompt = input('Calc dt press enter \n read dt press r ','s');
+
+if strcmp( prompt , 'r' ) == 1
     dt   = xlsread(filename,'Setting','B10:B10');
 else
 dt   = (dx .^ 2) ./ (u .* dx .* (Alpha-Betha) + 2 .* LCD0 + PLI_Decay(1) .* (dx .^ 2))  ;

@@ -16,5 +16,6 @@ The interface of the user and code materials is the familiar and friendly Excel 
 ### Support or Contact
 Please feel free to contact us:
 
-[Mostafa Ramezani](mailto:Ramezani.M@ut.ac.ir)
-[Rohoolah Noori](mailto:Noor@ut.ac.ir)
+* [Mostafa Ramezani](mailto:Ramezani.M@ut.ac.ir)
+
+* [Rohoolah Noori](mailto:Noor@ut.ac.ir)
