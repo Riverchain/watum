@@ -161,7 +161,7 @@ Dx_2012_Etemadshahidi_and_Taghipour(w,y,zl,s,q,u),...
 Dx_2014_Zeng_and_Huai(w,y,zl,s,q,u),...
 Dx_2015_Disley(w,y,zl,s,q,u),...
 Dx_2017_Noori_et_al(w,y,zl,s,q,u)];
-   
+
 
 xlswrite(filename,All_LDC,'LDC','a2:s9'); 
 
@@ -170,16 +170,16 @@ xlswrite(filename,All_LDC,'LDC','a2:s9');
 %LCD0 = Dx_2017_Noori_et_al(w,y,zl,s,q,u);
 %LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
 %LCD0 = Dx_2001_Deng_et_al(w,y,zl,s,q,u);
-LCD0 = Dx_1998_v2_Li_et_al(w,y,zl,s,q,u);
+%LCD0 = Dx_1998_v2_Li_et_al(w,y,zl,s,q,u);
 dt   = (dx .^ 2) ./ (u .* dx .* (Alpha-Betha) + 2 .* LCD0 + PLI_Decay(1) .* (dx .^ 2)) %#ok
 prompt = input('Calc dt press enter \n read dt press r ','s');
 
 if strcmp( prompt , 'r' ) == 1
     dt   = xlsread(filename,'Setting','B10:B10');
 else
-dt   = (dx .^ 2) ./ (u .* dx .* (Alpha-Betha) + 2 .* LCD0 + PLI_Decay(1) .* (dx .^ 2))  ;
-xlswrite(filename,min(dt),'Setting','B10:B10');
-dt   = xlsread(filename,'Setting','B10:B10'); % I call this the new Delta Time steps.
+    dt   = (dx .^ 2) ./ (u .* dx .* (Alpha-Betha) + 2 .* LCD0 + PLI_Decay(1) .* (dx .^ 2))  ;
+    xlswrite(filename,min(dt),'Setting','B10:B10');
+    dt   = xlsread(filename,'Setting','B10:B10'); % I call this the new Delta Time steps.
 end
 pause()
 %dt = 0.12; % MATLAB will waits here and you can change the dt with the value in excel setting sheet.
@@ -189,11 +189,11 @@ if isempty(tt) == 1
     tt   = mean(floor(length_river./ u)) +1 ;
 end
 
-nT           = floor(tt ./ dt)+1;
-nX           = floor(length_river./dx)+1;
-TX_Cells     = zeros(nT,nX); % makes the main matrix
-cn      = u .* (dt ./ dx) ; 
-Landa        = (LCD0 .* dt) ./ (dx .^ 2) ;
+nT= floor(tt ./ dt)+1;
+nX= floor(length_river./dx)+1;
+TX_Cells= zeros(nT,nX); % makes the main matrix
+cn= u .* (dt ./ dx) ; 
+Landa= (LCD0 .* dt) ./ (dx .^ 2) ;
 %% LDC modification
 if Alpha == 1
     en = u .* dx * (Alpha- 0.5) - (0.5 .* (u.*u.*dt));
