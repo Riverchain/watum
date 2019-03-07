@@ -102,13 +102,13 @@ elseif strcmp(LCD_num,'Iwasa and Aya (1991)') == 1
 elseif strcmp(LCD_num,'Seo and Cheong (1998)') == 1
         LCD0 = Dx_1998_Seo_and_Cheong(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Li et al. (1998)') == 1
+elseif strcmp(LCD_num,'Li et al (1998)') == 1
         LCD0 = Dx_1998_Li_et_al(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Li et al. 2 (1998)') == 1
+elseif strcmp(LCD_num,'Li et al 2 (1998)') == 1
         LCD0 = Dx_1998_v2_Li_et_al(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Deng et al. (2001)') == 1
+elseif strcmp(LCD_num,'Deng et al (2001)') == 1
         LCD0 = Dx_2001_Deng_et_al(w,y,zl,s,q,u);
 
 elseif strcmp(LCD_num,'Kashefipour and Falconer (2002)') == 1
@@ -129,11 +129,11 @@ elseif strcmp(LCD_num,'Etemadshahidi and Taghipour (2012)') == 1
 elseif strcmp(LCD_num,'Zeng and Huai (2014)') == 1
         LCD0 = Dx_2014_Zeng_and_Huai(w,y,zl,s,q,u);
 
-elseif strcmp(LCD_num,'Noori et al. (2017)') == 1
+elseif strcmp(LCD_num,'Noori et al (2017)') == 1
         LCD0 = Dx_2017_Noori_et_al(w,y,zl,s,q,u);
                
-elseif strcmp(LCD_num,'Disley et al. (2015)') == 1
-                     %'Disley et al. (2015)' 
+elseif strcmp(LCD_num,'Disley et al (2015)') == 1
+                    
         LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
        
 
