@@ -12,6 +12,8 @@ This is going to be a plug and play one! Only push the run button and the result
 ## Spreadsheet as database and user interface
 The interface of the user and code materials is the familiar and friendly Excel environment. You can prepare the **xlsx** file on online free spreadsheet tools and save it. Then run it locally in your machine. 
 
+## Are you science thirsty? 
+If you are eager to expand your knowledge about water, you will find [THIS LINK](https://riverchain.github.io/watum/Encyclopedia of Water Terms.html) useful. 
 
 ### Support or Contact
 Please feel free to contact us:
