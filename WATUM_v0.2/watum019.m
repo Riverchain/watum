@@ -163,7 +163,7 @@ Dx_2015_Disley(w,y,zl,s,q,u),...
 Dx_2017_Noori_et_al(w,y,zl,s,q,u)];
 
 
-xlswrite(filename,All_LDC,'LDC','a2:s9'); 
+xlswrite(filename,All_LDC,'LDC','a2:s8'); 
 
 % end LDC maker
 %% time specification
