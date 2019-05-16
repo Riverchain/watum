@@ -40,7 +40,11 @@ function r2 = r2_metric (observed, forecasted)
 % would involve the use of traditional parametric procedures
 % and requirements not least of which are the assumptions of a bivariate
 % normal distribution and a homoscedastic relationship.
+if length(observed) ~= length(forecasted)
+   error('inputs are not the same size')
+end
 
+   r2 = power(((sum((observed-mean(observed)).*(forecasted-mean(forecasted))))/(sqrt(sum(power(observed-mean(observed),2))*sum(power(forecasted-mean(forecasted),2))))),2);
 
 end
 
