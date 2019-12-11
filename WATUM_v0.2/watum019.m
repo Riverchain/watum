@@ -135,11 +135,18 @@ elseif strcmp(LCD_num,'Noori et al (2017)') == 1
 elseif strcmp(LCD_num,'Disley et al (2015)') == 1
                     
         LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
-       
 
+elseif strcmp(LCD_num,'Qiasi 01 (2017)') == 1
+                    
+        LCD0 = Dx_2017_Qiasi_et_al_01(w,y,zl,s,q,u,sigma);
+
+elseif strcmp(LCD_num,'Qiasi 02 (2017)') == 1
+                    
+        LCD0 = Dx_2017_Qiasi_et_al_02(w,y,zl,s,q,u,sigma);
         
 elseif strcmp(LCD_num,'None Dispersive Model') == 1
         LCD0 = 0 ;        
+        
 end 
 
 All_LDC = [ Dx_1959_Elder(w,y,zl,s,q,u),...
