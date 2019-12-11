@@ -26,6 +26,7 @@ y            = xlsread(filename,'Reach Propertise','K:K'); % Meters
 w            = xlsread(filename,'Reach Propertise','L:L'); % Meters
 zl           = xlsread(filename,'Reach Propertise','U:U'); % dim less
 u            = xlsread(filename,'Reach Propertise','S:S');
+sigma        = xlsread(filename,'Reach Propertise','AQ:AQ'); % Curvature factor
 % zr    = xlsread(filename,'Reach Propertise','G:G'); % dim less
 steper       = xlsread(filename,'Setting','B12:B12') ; % Decreases amount of report papers
 dx      = xlsread(filename,'Setting','B9:B9'); % Meters or Meter
@@ -167,17 +168,15 @@ Dx_2011_Azamathulla_and_Wu(w,y,zl,s,q,u),...
 Dx_2012_Etemadshahidi_and_Taghipour(w,y,zl,s,q,u),...
 Dx_2014_Zeng_and_Huai(w,y,zl,s,q,u),...
 Dx_2015_Disley(w,y,zl,s,q,u),...
-Dx_2017_Noori_et_al(w,y,zl,s,q,u)];
+Dx_2017_Noori_et_al(w,y,zl,s,q,u),...
+Dx_2017_Qiasi_et_al_01(w,y,zl,s,q,u,sigma),...
+Dx_2017_Qiasi_et_al_02(w,y,zl,s,q,u,sigma)];
 
 
-xlswrite(filename,All_LDC,'LDC','a2:s8'); 
+xlswrite(filename,All_LDC,'LDC'); 
 
 % end LDC maker
 %% time specification
-%LCD0 = Dx_2017_Noori_et_al(w,y,zl,s,q,u);
-%LCD0 = Dx_2015_Disley(w,y,zl,s,q,u);
-%LCD0 = Dx_2001_Deng_et_al(w,y,zl,s,q,u);
-%LCD0 = Dx_1998_v2_Li_et_al(w,y,zl,s,q,u);
 dt   = (dx .^ 2) ./ (u .* dx .* (Alpha-Betha) + 2 .* LCD0 + PLI_Decay(1) .* (dx .^ 2)) %#ok
 prompt = input('Calc dt press enter \n read dt press r ','s');
 
