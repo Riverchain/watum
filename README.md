@@ -15,7 +15,7 @@ The interface of the user and code materials is the familiar and friendly Excel 
 ## Some Jargons might be addressed here 
 In the spreadsheet file you'll encounter many jargons. You can find a definition for these words in the following link. Also if you are eager to expand your knowledge about water, you will find [THIS LINK](https://riverchain.github.io/watum/Encyclopedia of Water Terms.html) useful. 
 
-### Support or Contact
+## Support and Contact
 Please feel free to contact us:
 
 * [Mostafa Ramezani](mailto:Ramezani.M@ut.ac.ir)
